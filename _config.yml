@@ -39,7 +39,7 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0002-0139-0990"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   researcherid     : "https://www.webofscience.com/wos/author/record/JNT-0569-2023"
   scopus           : # URL
@@ -55,7 +55,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
