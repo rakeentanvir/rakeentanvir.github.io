@@ -6,20 +6,29 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am earning a Business Administration PhD in the Strategy Department at Duke University’s Fuqua School of Business. My research focuses on innovation and entrepreneurship and relies on theory and methods in strategic management, economics, and economic history. I study how labor automation technology is adopted by and diffuses among firms, how firms adapt and build resilience to shocks, and how entrepreneurs and startups test and raise capital for their ventures through experiments.
+# Research  
+I am a PhD student in Business Administration in the Strategy Department at Duke University’s Fuqua School of Business. My background spans economics, statistics, and psychology, and my research sits at the intersection of economic history, strategic management theory, and empirical economics.  
 
-I also experiment with systems for productivity and intentional living. For me, research and life systems are two sides of the same coin: both involve structuring complexity to uncover patterns and create progress.
+I study how innovation and entrepreneurship can be made more effective. My projects explore:  
+- How labor automation technologies are adopted and diffused among firms  
+- How firms adapt and build resilience to shocks  
+- How entrepreneurs and startups use experimentation under uncertainty to test their ventures and raise capital  
 
-I occasionally share ideas and reflections on content platforms, blending academic research, personal transformation, and creativity. My content often draws from fitness bodybuilding, strategy, and South Asian cultural perspectives, using storytelling to inspire students, professionals, and academics to think more intentionally about growth.
+My broader aim is to understand how firms and founders navigate uncertainty, and how policy and strategy can structure that uncertainty into progress.  
 
-### Travel & Culture
-I am drawn to places where walking and exploration generate new ways of thinking. My family roots in Nepal and Bangladesh have shaped a lifelong curiosity about culture and global perspective. Though I haven’t chased the same “country count” that airline geeks do, I take my travels seriously as a way of reconnecting with history, context, and identity. Long, rambling walks are often where my best research ideas come from.
+# Interests  
+Alongside research, I experiment with systems for productivity and intentional living. To me, designing research and designing life systems are two sides of the same coin: both involve structuring complexity to uncover patterns and generate growth.  
 
-### Fitness & Discipline
-Bodybuilding and hypertrophy training are core to my daily life. I track my progress using structured programs and fitness apps, treating physical growth as both a discipline and a form of content creation. For me, lifting is as much about narrative as it is about strength — a story of transformation, progress, and resilience.
+I occasionally share reflections that blend academic research, personal transformation, and creative storytelling. My content often draws from fitness and bodybuilding, strategy, and South Asian cultural perspectives, with the goal of inspiring students, professionals, and academics to think more intentionally about growth.  
 
-### Design & Systems
-I have a fascination with order and design. This shows up in unexpected ways: whether it’s building structured datasets from historical archives or creating life dashboards for productivity. I enjoy turning chaos into a usable system, and I like thinking about design — not only visually, but structurally.
+## Travel & Culture  
+My family roots in Nepal and Bangladesh have shaped a lifelong curiosity about culture and perspective. I see travel as a way of reconnecting with history and identity rather than chasing a country count. Long, rambling walks in new places often spark my best research ideas.  
 
-### Content & Creativity
-I am building a layered content practice: documenting fitness, self-improvement, and research journeys through long-form blogs, vlogs, and short-form social media. By doing so, I explore how discipline, creativity, and storytelling can build bridges across audiences.
+## Fitness & Discipline  
+Bodybuilding and hypertrophy training are central to my daily life. I approach training with structure and measurement, treating physical growth as both discipline and narrative — a story of transformation, resilience, and progress.  
+
+## Design & Systems  
+I have a fascination with design in both research and life. This shows up in my work with structured datasets and historical archives, in the dashboards I build for productivity, and in my interest in architecture and aesthetics. I enjoy turning chaos into order and uncovering design patterns, whether in data, systems, or environments.  
+
+## Content & Creativity  
+I am developing a layered content practice that documents fitness, self-improvement, and research journeys through long-form writing, vlogs, and short-form media. This practice is as much about experimenting with storytelling as it is about sharing ideas — building bridges across academic, professional, and creative audiences.  
