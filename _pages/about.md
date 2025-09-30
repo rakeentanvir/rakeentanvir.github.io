@@ -1,18 +1,18 @@
 ---
 permalink: /
-title: "Research"
+title: "About"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
  ---
-I am a PhD student in Business Administration in the Strategy Department at Duke University’s Fuqua School of Business. My background spans economics, statistics, and psychology, and my research uses economic history, strategic management theory, and empirical economics to study how innovation and entrepreneurship can be made more effective. My projects explore:  
-- How labor automation technologies are adopted and diffused among firms  
-- How firms adapt and build resilience to shocks  
-- How entrepreneurs and startups use experimentation under uncertainty to test their ventures and raise capital
+I am a PhD student in Business Administration in the Strategy Department at Duke University’s Fuqua School of Business. My background spans economics, statistics, mathematics, and psychology; and my research uses economic history, strategic management theory, and empirical economics to study how innovation and entrepreneurship can be made more effective. My projects explore:  
+- Adoption and diffusion of technological automation among firms and labor
+- How businesses and workers build resilience and adapt to shocks  
+- How entrepreneurs use experiments to test startups and raise venture capital
 
 My broader aim is to understand how firms navigate uncertainty, and how policy and strategy can structure that uncertainty into progress.
-# Interests  
+## Interests  
 Alongside research, I experiment with systems for productivity and intentional living. To me, designing research and designing life systems are two sides of the same coin: both involve structuring complexity to uncover patterns and generate growth. 
 
 I occasionally share reflections that blend academic research, personal transformation, and creative storytelling. My content often draws from fitness and bodybuilding, strategy, and South Asian cultural perspectives, with the goal of inspiring students, professionals, and academics to think more intentionally about growth.  
