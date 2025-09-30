@@ -12,10 +12,6 @@ I also experiment with systems for productivity and intentional living. For me, 
 
 I occasionally share ideas and reflections on content platforms, blending academic research, personal transformation, and creativity. My content often draws from fitness bodybuilding, strategy, and South Asian cultural perspectives, using storytelling to inspire students, professionals, and academics to think more intentionally about growth.
 
----
-
-## Outside my academic work, a few of my interests:
-
 # Travel & Culture
 I am drawn to places where walking and exploration generate new ways of thinking. My family roots in Nepal and Bangladesh have shaped a lifelong curiosity about culture and global perspective. Though I haven’t chased the same “country count” that airline geeks do, I take my travels seriously as a way of reconnecting with history, context, and identity. Long, rambling walks are often where my best research ideas come from.
 
