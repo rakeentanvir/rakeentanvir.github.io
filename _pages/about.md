@@ -1,4 +1,4 @@
----
+<!-- ---
 permalink: /
 title: "About"
 author_profile: true
@@ -6,6 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+-->
 ## Research  
 I am a PhD student in Business Administration in the Strategy Department at Duke University’s Fuqua School of Business. My background spans economics, statistics, and psychology, and my research uses economic history, strategic management theory, and empirical economics to study how innovation and entrepreneurship can be made more effective. My projects explore:  
 - How labor automation technologies are adopted and diffused among firms  
