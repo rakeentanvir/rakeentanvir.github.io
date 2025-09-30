@@ -6,14 +6,12 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a PhD student in Business Administration in the Strategy Department at Duke University’s Fuqua School of Business. My background spans economics, statistics, mathematics, and psychology, and I draw on economic history, strategic management theory, and empirical economics to study how innovation and entrepreneurship respond to uncertainty so as to make them more effective.
-
-My current projects examine:
+I am a PhD student in Business Administration in the Strategy Department at Duke University’s Fuqua School of Business. My background spans economics, statistics, mathematics, and psychology, and I draw on economic history, strategic management theory, and empirical economics to study how innovation and entrepreneurship respond to uncertainty and become more effective. My current projects examine:
 - How firms adopt and diffuse automation technologies, and interact with labor in the process
 - How businesses and workers adapt to shocks and build resilience
 - How entrepreneurs design and use experiments to test startups and raise capital
 
-Across these areas, my broader aim is to understand how firms and entrepreneurs navigate uncertainty, and how strategy and policy can transform uncertainty into opportunities for progress.
+My broader aim is to understand how firms and entrepreneurs navigate uncertainty, and how strategy and policy can transform uncertainty into opportunities for progress.
 
 # Interests  
 Outside of research, I explore systems for growth in life, fitness, and creative practice. I see designing research and structuring routines as parallel processes: both involve organizing complexity to uncover patterns, drive resilience, and create progress.
