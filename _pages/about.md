@@ -13,9 +13,9 @@ I am a PhD student in Business Administration in the Strategy Department at Duke
 - How entrepreneurs and startups use experimentation under uncertainty to test their ventures and raise capital
 
 My broader aim is to understand how firms navigate uncertainty, and how policy and strategy can structure that uncertainty into progress.
-
 ## Interests  
-Alongside research, I experiment with systems for productivity and intentional living. To me, designing research and designing life systems are two sides of the same coin: both involve structuring complexity to uncover patterns and generate growth.  
+Alongside research, I experiment with systems for productivity and intentional living. To me, designing research and designing life systems are two sides of the same coin: both involve structuring complexity to uncover patterns and generate growth. 
+
 I occasionally share reflections that blend academic research, personal transformation, and creative storytelling. My content often draws from fitness and bodybuilding, strategy, and South Asian cultural perspectives, with the goal of inspiring students, professionals, and academics to think more intentionally about growth.  
 ### Travel & Culture  
 My family roots in Nepal and Bangladesh have shaped a lifelong curiosity about culture and perspective. I see travel as a way of reconnecting with history and identity rather than chasing a country count. Long, rambling walks in new places often spark my best research ideas.  
