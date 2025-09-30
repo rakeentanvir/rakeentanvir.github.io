@@ -6,9 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am earning a Business Administration PhD in the Strategy Department at Duke University’s Fuqua School of Business. My research focuses on the dynamics of technological change and innovative transformation. I study how firms adapt to innovations using archival data, economic history, and strategy frameworks to understand long-term patterns of competition, adoption, and organizational change.
-
-I am interested more broadly in how organizations respond to shocks, how innovations diffuse, and how strategic insights can be drawn from long-run historical change. In parallel, I think deeply about trust in academic research and how strategic management scholarship can be made both historically grounded and practically useful.
+I am earning a Business Administration PhD in the Strategy Department at Duke University’s Fuqua School of Business. My research focuses on innovation and entrepreneurship. I study the adoption and diffusion of technological autaomation, entrepreneruial experimentation, and adaptation to shocks among firms, and their performance implications, using theory and methods in strategic management, economics, and economic history.
 
 I also experiment with systems for productivity and intentional living. For me, research and life systems are two sides of the same coin: both involve structuring complexity to uncover patterns and create progress.
 
@@ -18,14 +16,14 @@ I occasionally share ideas and reflections on content platforms, blending academ
 
 ## Outside my academic work, a few of my interests:
 
-**Travel & Culture**
+# Travel & Culture
 I am drawn to places where walking and exploration generate new ways of thinking. My family roots in Nepal and Bangladesh have shaped a lifelong curiosity about culture and global perspective. Though I haven’t chased the same “country count” that airline geeks do, I take my travels seriously as a way of reconnecting with history, context, and identity. Long, rambling walks are often where my best research ideas come from.
 
-**Fitness & Discipline**
+# Fitness & Discipline
 Bodybuilding and hypertrophy training are core to my daily life. I track my progress using structured programs and fitness apps, treating physical growth as both a discipline and a form of content creation. For me, lifting is as much about narrative as it is about strength — a story of transformation, progress, and resilience.
 
-**Design & Systems**
+# Design & Systems
 I have a fascination with order and design. This shows up in unexpected ways: whether it’s building structured datasets from historical archives or creating life dashboards for productivity. I enjoy turning chaos into a usable system, and I like thinking about design — not only visually, but structurally.
 
-**Content & Creativity**
+# Content & Creativity
 I am building a layered content practice: documenting fitness, self-improvement, and research journeys through long-form blogs, vlogs, and short-form social media. By doing so, I explore how discipline, creativity, and storytelling can build bridges across audiences.
