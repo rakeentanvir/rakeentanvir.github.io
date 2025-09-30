@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Rakeen Tanvir / Generating Insights in Strategic Management"
+title                    : "Rakeen Tanvir"
 title_separator          : "-"
 name                     : &name "Rakeen Tanvir"
 description              : &description "Strategic Management Scholar"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Rakeen"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Student, Business Administration, Strategy Department"
+  bio              : "Business Strategy PhD Student"
   location         : "Fuqua School of Business"
   employer         : "Duke University"
   uri              : # URL
