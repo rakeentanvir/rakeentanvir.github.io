@@ -7,8 +7,9 @@ redirect_from:
   - /about.html
 ---
 ### Research 
-I am a PhD student of Business Administration in the Strategy Department at Duke University’s Fuqua School of Business. I draw on strategic management, economic history, and empirical economics to study how firms:
+I am a PhD student of Business Administration in the Strategy Department at Duke University’s Fuqua School of Business. I draw on strategic management theory, economic history, and empirical economics to study how firms and entrepreneurs:
 - Adapt to shocks and exhibit resilience
-- Adopt technology and automate labor
-- Experiment to test new ventures and raise capital
-My broader aim is to discover strategy that helps firms achieve greater performance in innovation and entrepreneurship. 
+- Adopt labor-automating technology
+- Use experiments to build startups and raise capital
+
+My broader aim is to discover strategy and policy that improve the efficacy of innovation and entrepreneurship. 
