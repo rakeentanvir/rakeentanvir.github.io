@@ -12,8 +12,8 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Rakeen Tanvir"
 title_separator          : "-"
 name                     : &name "Rakeen Tanvir"
-description              : &description "Business Strategy Researcher"
-url                      : https://rakeentanvir.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+description              : &description "Rakeen Tanvir is a PhD student in the Strategy Department at Duke University's Fuqua School of Business, researching innovation and entrepreneurship strategy."
+url                      : https://rakeentanvir.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "rakeentanvir/rakeentanvir.github.io"
 
@@ -141,7 +141,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
+og_image                 : "/images/profile.png" # Social media default site image
 og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
@@ -164,6 +164,7 @@ include:
   - _pages
   - files
 exclude:
+  - cowork-website-brief.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

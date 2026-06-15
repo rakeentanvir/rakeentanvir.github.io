@@ -8,5 +8,11 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
+  - title: "Publications"
+    url: /publications/
+  - title: "Talks"
+    url: /talks/
+  - title: "Teaching"
+    url: /teaching/
   - title: "Curriculum Vitae"
-    url: http://rakeentanvir.github.io/files/CV_RakeenTanvir.pdf
+    url: /files/CV_RakeenTanvir.pdf

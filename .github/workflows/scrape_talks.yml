@@ -1,11 +1,15 @@
 name: Scrape Talk Locations
 
 on:
-  push:
-    paths:
-      - 'talks/**'
-      - '_talks/**'
-      - 'talkmap.ipynb'
+  # Automatic runs disabled to keep pushes under manual control.
+  # (Previously ran on changes to _talks/** or talkmap.ipynb and then auto-committed
+  # and pushed the regenerated talk map.) Re-enable by restoring the push: trigger below:
+  #   push:
+  #     paths:
+  #       - 'talks/**'
+  #       - '_talks/**'
+  #       - 'talkmap.ipynb'
+  workflow_dispatch:
 
 jobs:
   build:

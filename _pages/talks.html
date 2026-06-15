@@ -11,6 +11,11 @@ author_profile: true
 
 {% endif %}
 
+{% if site.talks.size == 0 %}
+<p><em>Talks and presentations will be listed here.</em></p>
+<!-- TODO: ask me — add talks here, or I can import them from your CV. -->
+{% endif %}
+
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
