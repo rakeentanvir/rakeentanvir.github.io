@@ -1,6 +1,7 @@
 ---
 title: "The Cost of Flexibility: Informal Governance and Resilience in the South African Taxi Industry"
 collection: publications
+published: false
 category: workingpapers
 permalink: /publication/cost-of-flexibility
 excerpt: 'Christopher F. Eaglin and Rakeen Tanvir. Revise and Resubmit at the Strategic Management Journal.'

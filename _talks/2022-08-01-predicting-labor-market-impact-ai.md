@@ -1,6 +1,7 @@
 ---
 title: "Predicting the Labor Market Impact of AI"
 collection: talks
+published: false
 type: "Talk"
 permalink: /talks/predicting-labor-market-impact-ai
 venue: "AEASP Final Conference, Howard University"

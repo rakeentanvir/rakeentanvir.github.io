@@ -1,6 +1,7 @@
 ---
 title: "Hawkish or Dovish? Inferring Intended Monetary Policy from the Fed's Dot Plot"
 collection: publications
+published: false
 category: manuscripts
 permalink: /publication/hawkish-or-dovish
 excerpt: 'With Manuel González-Astudillo. Journal of Economic Dynamics and Control (2026).'

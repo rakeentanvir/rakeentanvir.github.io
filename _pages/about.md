@@ -9,11 +9,13 @@ redirect_from:
 
 I am a PhD student in the Strategy Department at Duke University's Fuqua School of Business. I draw on strategic management and economics to identify strategies that improve innovative and entrepreneurial performance.
 
-### Research interests
+### Research
 
-Strategic management; innovation and entrepreneurship; economic history; science and technology; and the economics of AI and automation.
+With Christopher F. Eaglin, I study informal governance and resilience in the South African taxi industry. In separate work with Manuel González-Astudillo (Federal Reserve Board of Governors), I study how the Federal Reserve's "dot plot" can be used to infer intended monetary policy responses to inflation and economic activity.
 
-<!-- TODO: ask me — happy to tighten this into a short research statement in your own words. -->
+More broadly, my interests span strategic management, innovation and entrepreneurship, economic history, science and technology, and the economics of AI and automation.
+
+<!-- TODO: ask me — happy to add a sentence on each paper's main finding or contribution. -->
 
 ### Background
 

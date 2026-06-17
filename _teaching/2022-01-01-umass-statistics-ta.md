@@ -1,6 +1,7 @@
 ---
 title: "Teaching Assistant, Department of Mathematics & Statistics"
 collection: teaching
+published: false
 type: "Teaching assistant"
 permalink: /teaching/umass-statistics-ta
 venue: "University of Massachusetts Amherst"
