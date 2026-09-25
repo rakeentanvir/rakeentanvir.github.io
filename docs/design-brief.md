@@ -29,6 +29,8 @@ Old URLs resolve through Quarto `aliases`:
 - `/research/` and `/publications/` go to Research.
 - `/cv/`, `/resume.html`, `/talks/` and `/teaching/` go to CV.
 
+Quarto's redirect pages need JavaScript, so `_scripts/alias-redirects.ts` adds a fallback for visitors without it: an instant meta refresh and a plain link.
+
 ## Tokens
 
 These live in `styles.scss` (light) and `styles-dark.scss` (dark).
