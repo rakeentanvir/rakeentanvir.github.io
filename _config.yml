@@ -167,6 +167,12 @@ include:
   - files
 exclude:
   - cowork-website-brief.md
+  # Quarto site sources: keep them out of this Jekyll build until Pages is switched to gh-pages.
+  - docs
+  - "*.qmd"
+  - papers.yml
+  - "styles*.scss"
+  - images/profile.jpg
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
