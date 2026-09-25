@@ -8,7 +8,7 @@ under ten seconds, on any screen, in light or dark.
 
 - **One column.** The headshot sits at the top of the column. There is no sidebar, which is the part of the current theme that dates it.
 - **Type does the work.** There are no cards, no grids, no animation, no hero image and no icons.
-- **Plain text wins.** Page text is copied verbatim from `_pages/*.md` on `master`. New wording is the owner's to write. Open questions stay as `<!-- TODO -->` comments.
+- **Plain text wins.** Page text is copied verbatim from `_pages/*.md` on `master`. New wording is the owner's to write; the owner approved two exceptions on 2026-09-25, the Home focus list and the submitted working-paper title. Open questions stay as `<!-- TODO -->` comments.
 - **Nothing third-party.** No web fonts, no analytics, no search index, no CDN scripts. The pages load only files from this site.
 - **Relative links everywhere.** The domain appears once, as `site-url` in `_quarto.yml`, so the planned domain switch is a one-line change.
 
@@ -21,6 +21,8 @@ The nav has three items, Home · Research · CV. They sit on the right of a plai
 | Home (`index.qmd`) | Headshot, then the name, then the two-sentence intro. **Research** has three bolded focus terms in a short list, the research paragraphs, and the two papers as highlights (title + authors/venue). **Background** follows, then **CV & links** (CV, Google Scholar, ORCID, GitHub, LinkedIn). |
 | Research (`research.qmd`) | **Publications** and **Working Papers**, both listed from `papers.yml`. Each paper shows its title (linked when there is a link), then authors and venue, then a one-paragraph description, then optional extra links. |
 | CV (`cv.qmd`) | The CV sections, and a "Download PDF" link. The same file renders to `files/CV_RakeenTanvir.pdf` via Typst, so the old PDF link keeps working. The PDF must fit on two pages. |
+
+The focus terms were drafted on 2026-09-25 at the owner's request. They are the owner's framing of strategy (how firms' choices shape their outcomes) plus three of the Google Scholar profile keywords: Science&Innovation, Startups/Entrepreneurs and Labor Automation. The other two keywords, Strategic Management and Economic History, are covered by the lead-in and by the verbatim "More broadly…" sentence below the list. If the Scholar keywords change, update the list to match.
 
 Old URLs resolve through Quarto `aliases`:
 - `/about/` and `/about.html` go to Home.
@@ -67,6 +69,7 @@ The navbar contents align to the text column at every width. Below 576 px the na
 - US Letter, with margins of 0.9 in left/right and 0.75 in top/bottom.
 - Libertinus Serif at 10.5 pt. The font is built into Typst, so the PDF is identical locally and in CI.
 - The header is centered: name, affiliation, then the site URL (read from `site-url`).
+- No home location or personal contact details, in the PDF or anywhere on the site (owner, 2026-09-25). The old hand-made PDF's location line is deliberately left out.
 - Section headings are bold small caps over a hairline rule. Links use the site accent `#1a4f8b`.
 - There are no page numbers and no title block.
 - **Two pages, maximum.** Check `pdfinfo files/CV_RakeenTanvir.pdf` after each CV edit.
@@ -92,12 +95,16 @@ None of the four has a dark mode. Ours keeps the same restraint in dark: one acc
 
 ## Open items for the owner
 
-These are left as TODOs rather than filled in, per the rule against inventing academic content.
+These decisions are still open for the owner. Where one touches page text, it stays as a `<!-- TODO -->` rather than being filled in, per the rule against inventing academic content. Item 3 is settled and kept for the record.
 
-1. **Three focus terms** for the Home → Research list. There is a `<!-- TODO -->` in `index.qmd`.
-2. **Working-paper title.** `_pages/research.md` says "…Resilience in the South African Taxi Industry"; the project notes say "…Resilience in the Minibus Taxi Industry in South Africa". The site currently uses the former, verbatim. Confirm which is current (see the TODO in `papers.yml`).
-3. **One-sentence findings** for each paper on Home, and edits to the Research descriptions. These are the owner's existing TODOs, kept verbatim.
-4. **A higher-resolution headshot.** `images/profile.png` is 100×128 px (and is actually a JPEG, so the site uses a renamed copy, `images/profile.jpg`). A 400 px-wide original would look sharp on high-density screens.
+1. **One-sentence findings** for each paper on Home, and edits to the Research descriptions. These are the owner's existing TODOs, kept verbatim.
+2. **A higher-resolution headshot**, to be taken or found later. `images/profile.png` is 100×128 px, and it is actually a JPEG, so the site uses a renamed copy, `images/profile.jpg`. A 400 px-wide original would look sharp on high-density screens.
+   - **Strip all metadata before committing a new photo.** Phone and camera files carry EXIF data, often including GPS coordinates. The repo is public, and git history keeps every committed version, so never commit the original, even briefly.
+   - Check that the exported file has no EXIF, XMP or GPS block. The current file has none.
+3. **Working-paper title.** The site uses the submitted title, as listed on the co-author's research page: "…Resilience in the Minibus Taxi Industry in South Africa".
+   - The AOM 2026 symposium and `_pages/research.md` use the other name, "…South African Taxi Industry".
+   - The title may change again. It lives in two places: `papers.yml` and `cv.qmd`.
+4. **AOM 2026 symposium.** Google Scholar lists "Strategy, Technology, and Governance for Social Good in Emerging Markets" (*Academy of Management Proceedings*, 2026), a symposium that includes the working paper. It is not on the site or the CV. Add it to Presentations if wanted.
 5. **Extra profile links** (SSRN author page, ResearcherID), if wanted.
-6. **Clean-up after cutover:** remove the Jekyll theme files (`_sass/`, `_layouts/`, `_includes/`, `markdown_generator/`, `talkmap*`, unused `_pages/*`, `_config.yml`) and the hand-made `files/CV_RakeenTanvir.pdf`, which the build now regenerates.
+6. **Clean-up after cutover:** remove the Jekyll theme files (`_sass/`, `_layouts/`, `_includes/`, `markdown_generator/`, `talkmap*`, unused `_pages/*`, `_config.yml`) and the hand-made `files/CV_RakeenTanvir.pdf`, which the build now regenerates. That old PDF still has the location line, and the live Jekyll site serves it until cutover. Deleting it does not remove it from the public git history (commit faa17eb); removing it entirely needs a history rewrite, which is the owner's call.
 7. **Optional:** self-host one web font (e.g. Source Serif 4 for headings) for identical rendering across operating systems. It's a small cost; decide after seeing the system fonts.

@@ -1,5 +1,6 @@
 # Papers listed on research.qmd (full entries) and index.qmd (highlights).
-# Wording is copied verbatim from _pages/research.md on master; edit here, not in the pages.
+# Wording is copied verbatim from _pages/research.md on master (except the working-paper title; see
+# below); edit here, not in the pages.
 #
 # Fields: section (publications | working-papers), title, href (optional link on the title),
 # authors, venue (markdown), description (markdown), links (optional list of {text, href}).
@@ -14,10 +15,11 @@
     - text: SSRN working paper
       href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047330
 
-# TODO: confirm the title. _pages/research.md (copied here) says "...Resilience in the South African
-# Taxi Industry"; the project notes give "...Resilience in the Minibus Taxi Industry in South Africa".
+# Title: the submitted title, as on the co-author's research page (chriseaglin.com/research); chosen
+# by the owner on 2026-09-25 over the "...South African Taxi Industry" name in _pages/research.md.
+# It may change again: update it here and in cv.qmd.
 - section: working-papers
-  title: "\"The Cost of Flexibility: Informal Governance and Resilience in the South African Taxi Industry.\""
+  title: "\"The Cost of Flexibility: Informal Governance and Resilience in the Minibus Taxi Industry in South Africa.\""
   authors: "Christopher F. Eaglin and Rakeen Tanvir."
   venue: "Revise and resubmit at the *Strategic Management Journal*, 2026."
   description: "We study how the management of informal institutions shapes small-firm performance in South Africa's minibus taxi industry. Using administrative loan records, high-frequency GPS data, and weather shocks, we find that organizational flexibility increases vehicle utilization and improves loan repayment, though it does not fully protect firms when severe shocks occur."
