@@ -1,0 +1,31 @@
+---
+title: "Research"
+aliases:
+  - /research/
+  - /publications/
+listing:
+  - id: publications
+    contents: papers.yml
+    template: _templates/papers.ejs
+    include:
+      section: publications
+    sort: false
+  - id: working-papers
+    contents: papers.yml
+    template: _templates/papers.ejs
+    include:
+      section: working-papers
+    sort: false
+---
+
+## Publications
+
+::: {#publications}
+:::
+
+## Working Papers
+
+::: {#working-papers}
+:::
+
+<!-- TODO: ask me — tweak these one-line descriptions, or add works in progress here. -->

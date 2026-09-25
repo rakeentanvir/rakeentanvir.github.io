@@ -1,0 +1,53 @@
+# Renders the Quarto site and publishes _site to the gh-pages branch.
+#
+# Runs on every push to master (i.e. after a PR is merged) and on demand from the Actions tab.
+# The site only goes live from gh-pages once Settings > Pages > Source is switched to
+# "Deploy from a branch: gh-pages / (root)"; until then the Jekyll build of master stays live,
+# unchanged (_config.yml excludes the Quarto sources from it).
+name: Publish site
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+# Never run two deploys at once; a newer push waits for the running one instead of cancelling it.
+concurrency:
+  group: publish-gh-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          # Pinned to the version used for local previews.
+          version: 1.8.24
+
+      # quarto publish fails in CI when gh-pages does not exist yet, so create an empty one first.
+      - name: Ensure gh-pages branch exists
+        run: |
+          if ! git ls-remote --exit-code --heads origin gh-pages > /dev/null; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            empty_tree=$(git hash-object -t tree /dev/null)
+            commit=$(git commit-tree "$empty_tree" -m "Initialize gh-pages")
+            git push origin "$commit:refs/heads/gh-pages"
+          fi
+
+      # Renders every page (including the Typst CV PDF), then pushes _site to gh-pages.
+      - name: Render and publish to gh-pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

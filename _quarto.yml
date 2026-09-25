@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: _site
+  # Only these pages are rendered; the Jekyll files still in the repo are ignored.
+  render:
+    - index.qmd
+    - research.qmd
+    - cv.qmd
+    - 404.qmd
+  # CNAME is copied unchanged into _site so the custom domain survives each gh-pages deploy.
+  resources:
+    - CNAME
+  # Copies the CV PDF to files/CV_RakeenTanvir.pdf (see the script for why).
+  post-render: _scripts/copy-cv-pdf.ts
+
+website:
+  title: "Rakeen Tanvir"
+  description: "Rakeen Tanvir is a PhD student in the Strategy Department at Duke University's Fuqua School of Business, researching innovation and entrepreneurship strategy."
+  # The one place the domain is set (the CV PDF header reuses it via cv-site-url below).
+  site-url: &site-url https://rakeentanvir.com
+  favicon: images/favicon.ico
+  image: images/profile.jpg
+  open-graph: true
+  search: false
+  navbar:
+    collapse: false
+    # Always visible; the default hides the bar on scroll with a slide animation.
+    pinned: true
+    right:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research.qmd
+      - text: CV
+        href: cv.qmd
+
+# website.* is not visible to the meta shortcode, so expose the same URL to cv.qmd.
+cv-site-url: *site-url
+
+format:
+  html:
+    theme:
+      light: [default, styles.scss]
+      dark: [default, styles.scss, styles-dark.scss]
+    respect-user-color-scheme: true
+    # Text column = body-width + 50px - 2 x 16px page gutters (styles.scss) = 720px on desktop.
+    grid:
+      body-width: 702px
+    toc: false
+    anchor-sections: false
+    smooth-scroll: false
+    canonical-url: true
+    # Listing pages otherwise pull MathJax from a CDN; the site has no math.
+    html-math-method: plain

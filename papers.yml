@@ -1,0 +1,23 @@
+# Papers listed on research.qmd (full entries) and index.qmd (highlights).
+# Wording is copied verbatim from _pages/research.md on master; edit here, not in the pages.
+#
+# Fields: section (publications | working-papers), title, href (optional link on the title),
+# authors, venue (markdown), description (markdown), links (optional list of {text, href}).
+
+- section: publications
+  title: "\"Hawkish or Dovish? Inferring Intended Monetary Policy from the Fed's Dot Plot.\""
+  href: https://www.sciencedirect.com/science/article/abs/pii/S0165188926000400
+  authors: "Manuel González-Astudillo and Rakeen Tanvir."
+  venue: "*Journal of Economic Dynamics and Control*, 2026."
+  description: "We use the Federal Reserve's \"dot plot\"—the Summary of Economic Projections—to gauge policymakers' intended monetary-policy responses to inflation and economic activity in real time."
+  links:
+    - text: SSRN working paper
+      href: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5047330
+
+# TODO: confirm the title. _pages/research.md (copied here) says "...Resilience in the South African
+# Taxi Industry"; the project notes give "...Resilience in the Minibus Taxi Industry in South Africa".
+- section: working-papers
+  title: "\"The Cost of Flexibility: Informal Governance and Resilience in the South African Taxi Industry.\""
+  authors: "Christopher F. Eaglin and Rakeen Tanvir."
+  venue: "Revise and resubmit at the *Strategic Management Journal*, 2026."
+  description: "We study how the management of informal institutions shapes small-firm performance in South Africa's minibus taxi industry. Using administrative loan records, high-frequency GPS data, and weather shocks, we find that organizational flexibility increases vehicle utilization and improves loan repayment, though it does not fully protect firms when severe shocks occur."

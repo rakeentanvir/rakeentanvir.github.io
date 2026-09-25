@@ -1,0 +1,10 @@
+// Dark-mode colors only. Layered after styles.scss for the dark theme (see _quarto.yml);
+// the matching light values in styles.scss are !default, so these win.
+
+/*-- scss:defaults --*/
+
+$body-bg: #121212;
+$body-color: #e6e6e6;                // 15.0:1 on #121212
+$link-color: #8ab4f8;                // 8.9:1 on #121212
+$site-muted: #a6a6a6;                // 7.7:1 on #121212
+$site-rule: #2e2e2e;
