@@ -1,6 +1,7 @@
 // Site theme. The design decisions and their reasons are in docs/design-brief.md.
-// Typography and spacing tokens ($site-*) come from the design variant chosen in _quarto.yml
-// (styles-a.scss or styles-b.scss); dark mode layers styles-dark.scss on top.
+// The typography and spacing tokens (fonts, sizes, $site-measure, spacing, link underline) come
+// from the design variant chosen in _quarto.yml (styles-a.scss or styles-b.scss); dark mode
+// layers styles-dark.scss on top.
 
 /*-- scss:defaults --*/
 
@@ -41,7 +42,7 @@ $link-hover-decoration: underline;
 // margin. Quarto's desktop text column is body-width + 50px minus the two gutters, so this
 // makes it exactly $site-measure wide.
 $grid-page-gutter: 16px;
-$grid-body-width: $site-measure - 18px;
+$grid-body-width: $site-measure - 50px + 2 * $grid-page-gutter;
 
 /*-- scss:rules --*/
 
@@ -117,7 +118,8 @@ a:focus-visible {
   }
 }
 
-// Tablets: Quarto narrows the text column to body-width minus the two page gutters (670px).
+// Tablets: Quarto narrows the text column to body-width minus the two page gutters
+// (670px in variant A, 610px in B).
 @media (min-width: 768px) and (max-width: 991.98px) {
   .navbar .navbar-container {
     max-width: $grid-body-width;
@@ -131,7 +133,8 @@ a:focus-visible {
 }
 
 // Phones: the name and the light/dark toggle on the first row, the three links on the second.
-// (One row needs about 410px; this keeps the name whole down to 320px screens.)
+// (One row needs about 410px at variant A's 18px, a little more in B; this keeps the name whole
+// down to 320px screens.)
 @media (max-width: 575.98px) {
   .navbar .navbar-container {
     flex-wrap: wrap;

@@ -41,7 +41,9 @@ website:
 cv-site-url: *site-url
 
 # Design variant (typography and spacing): styles-a.scss reads docs/design-brief.md literally,
-# styles-b.scss is a second reading. Change this one line to switch.
+# styles-b.scss is a second reading. Change this one line to switch. The variant goes after
+# styles.scss below: Quarto reads a later theme file's defaults first, so its tokens are defined
+# before styles.scss uses them.
 design-variant: &design-variant styles-a.scss
 
 format:
