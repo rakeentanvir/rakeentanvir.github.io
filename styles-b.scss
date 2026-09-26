@@ -1,0 +1,34 @@
+// Design variant B: a second, still text-first reading of the design brief (docs/design-brief.md):
+// the heading serif carried into the body, a slightly larger size, a narrower column and more space.
+// Selected by design-variant in _quarto.yml. Typography and spacing only: colors live in
+// styles.scss and styles-dark.scss, and the rules that use these tokens are in styles.scss.
+
+/*-- scss:defaults --*/
+
+// Type: one old-style serif for headings and body, a system font.
+// Iowan Old Style (Apple), Palatino Linotype (Windows), P052 / URW Palladio (Linux).
+$site-heading-font: "Iowan Old Style", "Palatino Linotype", Palatino, "URW Palladio L", P052, serif;
+$site-body-font: "Iowan Old Style", "Palatino Linotype", Palatino, "URW Palladio L", P052, serif;
+$site-font-size: 19px;               // base size (1rem)
+$site-line-height: 1.7;
+$site-measure: 660px;                // text column width on desktop (about 70-75 characters a line)
+
+// Heading scale: flatter than A; space, not size, separates the sections.
+$site-heading-weight: 600;           // these fonts have no semibold, so this draws as bold
+$site-heading-line-height: 1.25;
+$site-h1-size: 2rem;
+$site-h2-size: 1.3rem;
+$site-h3-size: 1.1rem;
+$site-h1-size-phone: 1.65rem;        // page titles below 768px
+
+// Vertical spacing.
+$site-paragraph-space: 1.15rem;      // below each paragraph
+$site-section-space: 3rem;           // above each section heading (h2)
+$site-heading-space: 1rem;           // below each section heading
+$site-paper-space: 2rem;             // between papers in a listing
+
+// Links: always underlined; a slightly lower, firmer hairline than A to suit the lighter serif,
+// solid on hover and focus.
+$site-link-underline: 1px;
+$site-link-underline-offset: 0.22em;
+$site-link-underline-alpha: 0.55;

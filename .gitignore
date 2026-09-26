@@ -22,3 +22,6 @@ package-lock.json
 # Quarto
 /.quarto/
 **/*.quarto_ipynb
+
+# Local design-review screenshots (Step 2); never committed
+/_review/

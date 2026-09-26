@@ -40,15 +40,18 @@ website:
 # website.* is not visible to the meta shortcode, so expose the same URL to cv.qmd.
 cv-site-url: *site-url
 
+# Design variant (typography and spacing): styles-a.scss reads docs/design-brief.md literally,
+# styles-b.scss is a second reading. Change this one line to switch. The variant goes after
+# styles.scss below: Quarto reads a later theme file's defaults first, so its tokens are defined
+# before styles.scss uses them.
+design-variant: &design-variant styles-a.scss
+
 format:
   html:
     theme:
-      light: [default, styles.scss]
-      dark: [default, styles.scss, styles-dark.scss]
+      light: [default, styles.scss, *design-variant]
+      dark: [default, styles.scss, *design-variant, styles-dark.scss]
     respect-user-color-scheme: true
-    # Text column = body-width + 50px - 2 x 16px page gutters (styles.scss) = 720px on desktop.
-    grid:
-      body-width: 702px
     toc: false
     anchor-sections: false
     smooth-scroll: false

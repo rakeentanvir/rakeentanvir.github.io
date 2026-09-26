@@ -33,7 +33,8 @@ Quarto's redirect pages need JavaScript, so `_scripts/alias-redirects.ts` adds a
 
 ## Tokens
 
-These live in `styles.scss` (light) and `styles-dark.scss` (dark).
+Colors live in `styles.scss` (light) and `styles-dark.scss` (dark).
+Typography and spacing tokens (fonts, sizes, `$site-measure`, spacing, link underline) live in a design-variant file, chosen by the one line `design-variant:` in `_quarto.yml`. `styles-a.scss` (the default) is the reading of this brief described below. `styles-b.scss` is a second reading, kept for comparison until the owner picks one: the heading serif carried into the body at 19 px, a 660 px column, a flatter heading scale, and more space between paragraphs, sections and papers. `styles.scss` holds the rules that use the tokens, so a variant changes values only.
 
 | Token | Light | Dark | Notes |
 |---|---|---|---|
@@ -47,7 +48,7 @@ Ratios are WCAG contrast against the page background. Every text pair passes AAA
 The link accent is under 3:1 against body text, so **links stay underlined**. The underline is a 1px hairline at 40% of the accent, offset 0.18em, and it turns solid on hover and focus. There are no transitions.
 
 **Measure.** The text column is 720 px wide on desktop and centered.
-- It comes from `grid: body-width: 702px` in `_quarto.yml` together with the 16 px page gutters in `styles.scss`.
+- It comes from `$site-measure` in the design-variant file (see Tokens), which `styles.scss` turns into Quarto's `$grid-body-width` together with the 16 px page gutters.
 - Tablets (768–991 px) get a 670 px column.
 - Phones get the full width minus a 16 px gutter on each side, with no horizontal scroll.
 
@@ -108,5 +109,5 @@ These decisions are still open for the owner. Where one touches page text, it st
    - The title may change again. It lives in two places: `papers.yml` and `cv.qmd`.
 4. **AOM 2026 symposium.** Google Scholar lists "Strategy, Technology, and Governance for Social Good in Emerging Markets" (*Academy of Management Proceedings*, 2026), a symposium that includes the working paper. It is not on the site or the CV. Add it to Presentations if wanted.
 5. **Extra profile links** (SSRN author page, ResearcherID), if wanted.
-6. **Clean-up after cutover:** remove the Jekyll theme files (`_sass/`, `_layouts/`, `_includes/`, `markdown_generator/`, `talkmap*`, unused `_pages/*`, `_config.yml`) and the hand-made `files/CV_RakeenTanvir.pdf`, which the build now regenerates. That old PDF still has the location line, and the live Jekyll site serves it until cutover. Deleting it does not remove it from the public git history (commit faa17eb); removing it entirely needs a history rewrite, which is the owner's call.
+6. **Clean-up after cutover:** remove the Jekyll theme files (`_sass/`, `_layouts/`, `_includes/`, `markdown_generator/`, `talkmap*`, unused `_pages/*`, `_config.yml`) and the hand-made `files/CV_RakeenTanvir.pdf`, which the build now regenerates. That old PDF still has the location line. The site no longer serves it (the build publishes the regenerated PDF at the same path), but it stays in the repository until deleted. Deleting it does not remove it from the public git history (commit faa17eb); removing it entirely needs a history rewrite, which is the owner's call.
 7. **Optional:** self-host one web font (e.g. Source Serif 4 for headings) for identical rendering across operating systems. It's a small cost; decide after seeing the system fonts.

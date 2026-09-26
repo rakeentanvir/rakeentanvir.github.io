@@ -1,5 +1,7 @@
 // Site theme. The design decisions and their reasons are in docs/design-brief.md.
-// Dark mode layers styles-dark.scss on top of this file (see _quarto.yml).
+// The typography and spacing tokens (fonts, sizes, $site-measure, spacing, link underline) come
+// from the design variant chosen in _quarto.yml (styles-a.scss or styles-b.scss); dark mode
+// layers styles-dark.scss on top.
 
 /*-- scss:defaults --*/
 
@@ -20,28 +22,27 @@ $navbar-hl: $link-color;
 $footer-bg: $body-bg;
 $footer-fg: $site-muted;
 
-// Type. System font stacks only: no web-font downloads, no third-party requests.
-// Headings: old-style serif (Iowan Old Style on Apple, Palatino Linotype on Windows, P052 on Linux).
-// Body: humanist sans (Seravek on Apple, Segoe UI on Windows, Ubuntu / DejaVu Sans on Linux).
-$site-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "URW Palladio L", P052, serif;
-$site-sans: Seravek, "Segoe UI", Ubuntu, Calibri, "DejaVu Sans", "Helvetica Neue", Arial, sans-serif;
-
-$font-family-sans-serif: $site-sans;
-$headings-font-family: $site-serif;
-$font-size-root: 18px;
-$line-height-base: 1.65;
-$headings-font-weight: 600;
-$headings-line-height: 1.25;
-$h1-font-size: 2rem;
-$h2-font-size: 1.4rem;
-$h3-font-size: 1.15rem;
+// Type, from the variant's tokens. System font stacks only: no web-font downloads.
+// ($font-family-sans-serif is Bootstrap's body font, whatever the variant puts in it.)
+$font-family-sans-serif: $site-body-font;
+$headings-font-family: $site-heading-font;
+$font-size-root: $site-font-size;
+$line-height-base: $site-line-height;
+$headings-font-weight: $site-heading-weight;
+$headings-line-height: $site-heading-line-height;
+$h1-font-size: $site-h1-size;
+$h2-font-size: $site-h2-size;
+$h3-font-size: $site-h3-size;
+$paragraph-margin-bottom: $site-paragraph-space;
 
 $link-decoration: underline;
 $link-hover-decoration: underline;
 
 // Layout: 16px page gutters (Quarto's default is 1.5em), which gives phones a 16px side
-// margin. The 720px desktop column is set by grid: body-width in _quarto.yml.
+// margin. Quarto's desktop text column is body-width + 50px minus the two gutters, so this
+// makes it exactly $site-measure wide.
 $grid-page-gutter: 16px;
+$grid-body-width: $site-measure - 50px + 2 * $grid-page-gutter;
 
 /*-- scss:rules --*/
 
@@ -53,15 +54,15 @@ body {
 h1, h2, h3,
 .title,
 .navbar-title {
-  font-family: $site-serif;
+  font-family: $site-heading-font;
 }
 
 // Links: always underlined (the accent alone is not enough to mark a link),
 // with a soft underline that firms up on hover. No transitions.
 a {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-  text-decoration-color: rgba($link-color, 0.4);
+  text-decoration-thickness: $site-link-underline;
+  text-underline-offset: $site-link-underline-offset;
+  text-decoration-color: rgba($link-color, $site-link-underline-alpha);
 }
 a:hover,
 a:focus-visible {
@@ -117,21 +118,23 @@ a:focus-visible {
   }
 }
 
-// Tablets: Quarto narrows the text column to body-width minus the two page gutters (670px).
+// Tablets: Quarto narrows the text column to body-width minus the two page gutters
+// (670px in variant A, 610px in B).
 @media (min-width: 768px) and (max-width: 991.98px) {
   .navbar .navbar-container {
     max-width: $grid-body-width;
   }
 }
-// Desktop: the 720px column plus the 16px padding on each side.
+// Desktop: the text column plus the 16px padding on each side.
 @media (min-width: 992px) {
   .navbar .navbar-container {
-    max-width: calc(720px + 32px);
+    max-width: $site-measure + 32px;
   }
 }
 
 // Phones: the name and the light/dark toggle on the first row, the three links on the second.
-// (One row needs about 410px; this keeps the name whole down to 320px screens.)
+// (One row needs about 410px at variant A's 18px, a little more in B; this keeps the name whole
+// down to 320px screens.)
 @media (max-width: 575.98px) {
   .navbar .navbar-container {
     flex-wrap: wrap;
@@ -152,8 +155,8 @@ a:focus-visible {
   margin-block-end: 1.5rem;
 }
 h2 {
-  margin-top: 2.4rem;
-  margin-bottom: 0.9rem;
+  margin-top: $site-section-space;
+  margin-bottom: $site-heading-space;
   padding-bottom: 0;
   border-bottom: none;
 }
@@ -161,7 +164,7 @@ h2 {
 // heading wraps the whole page in one section, so that rule catches every h2 there; restore
 // the section spacing (this selector outranks Quarto's).
 #quarto-content section.level1 > section.level2 > h2:first-child {
-  margin-top: 2.4rem;
+  margin-top: $site-section-space;
 }
 
 // Home: headshot at the top of the column, then the name.
@@ -188,7 +191,7 @@ h1.site-name {
   }
 }
 .paper + .paper {
-  margin-top: 1.5rem;
+  margin-top: $site-paper-space;
 }
 .paper-title {
   font-weight: 600;
@@ -202,6 +205,6 @@ h1.site-name {
 @media (max-width: 767.98px) {
   h1.site-name,
   .title {
-    font-size: 1.7rem;
+    font-size: $site-h1-size-phone;
   }
 }
