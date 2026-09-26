@@ -34,7 +34,7 @@ Quarto's redirect pages need JavaScript, so `_scripts/alias-redirects.ts` adds a
 ## Tokens
 
 Colors live in `styles.scss` (light) and `styles-dark.scss` (dark).
-Typography and spacing tokens (`$site-*`: fonts, sizes, measure, spacing, link underline) live in a design-variant file, chosen by the one line `design-variant:` in `_quarto.yml`. `styles-a.scss` is the reading of this brief described below; `styles.scss` holds the rules that use the tokens, so a variant changes values only.
+Typography and spacing tokens (`$site-*`: fonts, sizes, measure, spacing, link underline) live in a design-variant file, chosen by the one line `design-variant:` in `_quarto.yml`. `styles-a.scss` (the default) is the reading of this brief described below. `styles-b.scss` is a second reading, kept for comparison until the owner picks one: the heading serif carried into the body at 19 px, a 660 px column, a flatter heading scale, and more space between paragraphs, sections and papers. `styles.scss` holds the rules that use the tokens, so a variant changes values only.
 
 | Token | Light | Dark | Notes |
 |---|---|---|---|
