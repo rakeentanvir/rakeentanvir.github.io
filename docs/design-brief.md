@@ -33,7 +33,8 @@ Quarto's redirect pages need JavaScript, so `_scripts/alias-redirects.ts` adds a
 
 ## Tokens
 
-These live in `styles.scss` (light) and `styles-dark.scss` (dark).
+Colors live in `styles.scss` (light) and `styles-dark.scss` (dark).
+Typography and spacing tokens (`$site-*`: fonts, sizes, measure, spacing, link underline) live in a design-variant file, chosen by the one line `design-variant:` in `_quarto.yml`. `styles-a.scss` is the reading of this brief described below; `styles.scss` holds the rules that use the tokens, so a variant changes values only.
 
 | Token | Light | Dark | Notes |
 |---|---|---|---|
@@ -47,7 +48,7 @@ Ratios are WCAG contrast against the page background. Every text pair passes AAA
 The link accent is under 3:1 against body text, so **links stay underlined**. The underline is a 1px hairline at 40% of the accent, offset 0.18em, and it turns solid on hover and focus. There are no transitions.
 
 **Measure.** The text column is 720 px wide on desktop and centered.
-- It comes from `grid: body-width: 702px` in `_quarto.yml` together with the 16 px page gutters in `styles.scss`.
+- It comes from `$site-measure` in the design-variant file (see Tokens), which `styles.scss` turns into Quarto's `$grid-body-width` together with the 16 px page gutters.
 - Tablets (768–991 px) get a 670 px column.
 - Phones get the full width minus a 16 px gutter on each side, with no horizontal scroll.
 
