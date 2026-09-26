@@ -183,6 +183,10 @@ June 2026 CV says "Research Assistant" (used). -->
 2010
 : Tutor, Codman Academy Charter Public School
 
+<!-- TODO: The Sept 2025 CV export, the only source that has it, lists coursework under "Courses"
+(economics, mathematics, statistics, social science). The June 2026 CV has no such section, so it
+is left out. Add it? -->
+
 ## Languages
 
 English (native), Bengali/Bangla (intermediate), Nepali (basic), Hindi (basic), Spanish (basic)
