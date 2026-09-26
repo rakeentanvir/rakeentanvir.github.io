@@ -1,0 +1,33 @@
+// Design variant A: the design brief (docs/design-brief.md) read as literally as possible.
+// Selected by design-variant in _quarto.yml. Typography and spacing only: colors live in
+// styles.scss and styles-dark.scss, and the rules that use these tokens are in styles.scss.
+
+/*-- scss:defaults --*/
+
+// Type: an old-style serif for headings and a humanist sans for the body, both system fonts.
+// Headings: Iowan Old Style (Apple), Palatino Linotype (Windows), P052 / URW Palladio (Linux).
+// Body: Seravek (Apple), Segoe UI (Windows), Ubuntu / DejaVu Sans (Linux).
+$site-heading-font: "Iowan Old Style", "Palatino Linotype", Palatino, "URW Palladio L", P052, serif;
+$site-body-font: Seravek, "Segoe UI", Ubuntu, Calibri, "DejaVu Sans", "Helvetica Neue", Arial, sans-serif;
+$site-font-size: 18px;               // base size (1rem)
+$site-line-height: 1.65;
+$site-measure: 720px;                // text column width on desktop
+
+// Heading scale.
+$site-heading-weight: 600;
+$site-heading-line-height: 1.25;
+$site-h1-size: 2rem;
+$site-h2-size: 1.4rem;
+$site-h3-size: 1.15rem;
+$site-h1-size-phone: 1.7rem;         // page titles below 768px
+
+// Vertical spacing.
+$site-paragraph-space: 1rem;         // below each paragraph
+$site-section-space: 2.4rem;         // above each section heading (h2)
+$site-heading-space: 0.9rem;         // below each section heading
+$site-paper-space: 1.5rem;           // between papers in a listing
+
+// Links: always underlined, with a soft hairline that turns solid on hover and focus.
+$site-link-underline: 1px;
+$site-link-underline-offset: 0.18em;
+$site-link-underline-alpha: 0.4;
