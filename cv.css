@@ -1,0 +1,29 @@
+/* CV page only (cv.qmd): dated entries are Pandoc definition lists, shown as a year column
+   beside each entry. The PDF gets the same layout from the Typst terms rule in cv.qmd.
+   Kept out of styles.scss so it applies to this page alone. No colors here: the theme's
+   light and dark colors apply unchanged. */
+
+main dl {
+  display: grid;
+  grid-template-columns: 5.6em 1fr;
+  column-gap: 0.9em;
+  row-gap: 0.45rem;
+  margin-bottom: 0;
+}
+main dt {
+  font-weight: normal;
+  font-variant-numeric: tabular-nums;
+}
+main dd {
+  margin: 0;
+}
+
+/* Phones: the year above its entry. */
+@media (max-width: 575.98px) {
+  main dl {
+    display: block;
+  }
+  main dd {
+    margin-bottom: 0.6rem;
+  }
+}
