@@ -9,7 +9,8 @@ format:
   html:
     format-links: false
   typst:
-    # Rendered to _site/CV_RakeenTanvir.pdf, then copied to _site/files/ by _scripts/copy-cv-pdf.ts.
+    # Rendered to _site/CV_RakeenTanvir.pdf, then copied (moved, in CI) to _site/files/ by
+    # _scripts/copy-cv-pdf.ts.
     output-file: CV_RakeenTanvir.pdf
     title: ""
     papersize: us-letter

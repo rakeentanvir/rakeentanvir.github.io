@@ -10,8 +10,11 @@ project:
   # CNAME is copied unchanged into _site so the custom domain survives each gh-pages deploy.
   resources:
     - CNAME
-  # Copies the CV PDF to files/CV_RakeenTanvir.pdf (see the script for why).
-  post-render: _scripts/copy-cv-pdf.ts
+  post-render:
+    # Puts the CV PDF at files/CV_RakeenTanvir.pdf (see the script for why).
+    - _scripts/copy-cv-pdf.ts
+    # Lets the old-URL redirect pages work without JavaScript.
+    - _scripts/alias-redirects.ts
 
 website:
   title: "Rakeen Tanvir"
