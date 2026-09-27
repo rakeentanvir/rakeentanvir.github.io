@@ -75,7 +75,7 @@ The navbar contents align to the text column at every width. Below 576 px the na
 - No home location or personal contact details, in the PDF or anywhere on the site (owner, 2026-09-25). The old hand-made PDF's location line is deliberately left out. The one contact detail is the Duke work email, on the CV page and in the PDF (owner, 2026-09-26).
 - Section headings are bold small caps over a hairline rule. Links use the site accent `#1a4f8b`.
 - Dated entries are Pandoc definition lists (the year, then the entry). A Typst `terms` rule in `cv.qmd` sets them as a year column in the PDF, with lining figures so the years align; `cv.css` does the same on the web page, where phones put the year above the entry.
-- There are no page numbers and no title block.
+- There are no page numbers and no title block. The PDF metadata carries the title "Rakeen Tanvir – Curriculum Vitae" and the author "Rakeen Tanvir", so viewers show that instead of the file name (set in `cv.qmd`).
 - **Two pages, maximum.** After each CV edit, run a full `quarto render` and check `pdfinfo _site/files/CV_RakeenTanvir.pdf`. (The `files/CV_RakeenTanvir.pdf` in the repo is the old hand-made PDF; see item 6 below.)
 
 ## Borrowed from the model sites

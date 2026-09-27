@@ -28,6 +28,8 @@ format:
     page-numbering: ""
     include-in-header:
       text: |
+        // The PDF's metadata (the title a PDF viewer shows); the page itself has no title block.
+        #set document(title: "Rakeen Tanvir – Curriculum Vitae", author: "Rakeen Tanvir")
         #show heading.where(level: 1): it => block(above: 1.4em, below: 0.75em, width: 100%)[
           #set text(size: 1.05em, weight: "bold")
           #smallcaps(it.body)
