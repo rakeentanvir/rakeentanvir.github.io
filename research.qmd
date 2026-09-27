@@ -28,4 +28,4 @@ listing:
 ::: {#working-papers}
 :::
 
-<!-- TODO: ask me — tweak these one-line descriptions, or add works in progress here. -->
+<!-- TODO: ask me — add works in progress here? (The paper descriptions live in papers.yml.) -->

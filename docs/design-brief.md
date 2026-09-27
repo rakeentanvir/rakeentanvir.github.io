@@ -8,7 +8,7 @@ under ten seconds, on any screen, in light or dark.
 
 - **One column.** The headshot sits at the top of the column. There is no sidebar, which is the part of the current theme that dates it.
 - **Type does the work.** There are no cards, no grids, no animation, no hero image and no icons.
-- **Plain text wins.** Page text is copied verbatim from `_pages/*.md` on `master`. New wording is the owner's to write; the owner approved two exceptions on 2026-09-25, the Home focus list and the submitted working-paper title. Open questions stay as `<!-- TODO -->` comments.
+- **Plain text wins.** Page text is copied verbatim from `_pages/*.md` on `master`. New wording is the owner's to write; the owner approved two exceptions on 2026-09-25, the Home focus list and the submitted working-paper title, and on 2026-09-26 asked for the published paper's description and one-sentence finding to be summarized from its published abstract. Open questions stay as `<!-- TODO -->` comments.
 - **Nothing third-party.** No web fonts, no analytics, no search index, no CDN scripts. The pages load only files from this site.
 - **Relative links everywhere.** The domain appears once, as `site-url` in `_quarto.yml`, so the planned domain switch is a one-line change.
 
@@ -18,7 +18,7 @@ The nav has three items, Home · Research · CV. They sit on the right of a plai
 
 | Page | Content |
 |---|---|
-| Home (`index.qmd`) | Headshot, then the name, then the two-sentence intro. **Research** has three bolded focus terms in a short list, the research paragraphs, and the two papers as highlights (title + authors/venue). **Background** follows, then **CV & links** (CV, Google Scholar, ORCID, GitHub, LinkedIn). |
+| Home (`index.qmd`) | Headshot, then the name, then the two-sentence intro. **Research** has three bolded focus terms in a short list, the research paragraphs, and the two papers as highlights (title + authors/venue, then a one-sentence finding where `papers.yml` has one; the working paper has none yet). **Background** follows, then **CV & links** (CV, Google Scholar, ORCID, SSRN, ResearcherID, GitHub, LinkedIn). |
 | Research (`research.qmd`) | **Publications** and **Working Papers**, both listed from `papers.yml`. Each paper shows its title (linked when there is a link), then authors and venue, then a one-paragraph description, then optional extra links. |
 | CV (`cv.qmd`) | The CV sections, and a "Download PDF" link. The same file renders to `files/CV_RakeenTanvir.pdf` via Typst, so the old PDF link keeps working. The PDF must fit on two pages. |
 
@@ -99,16 +99,16 @@ None of the four has a dark mode. Ours keeps the same restraint in dark: one acc
 
 ## Open items for the owner
 
-These decisions are still open for the owner. Where one touches page text, it stays as a `<!-- TODO -->` rather than being filled in, per the rule against inventing academic content. Item 3 is settled and kept for the record.
+These decisions are still open for the owner. Where one touches page text, it stays as a `<!-- TODO -->` rather than being filled in, per the rule against inventing academic content. Items 1, 3, 4 and 5 are settled and kept for the record.
 
-1. **One-sentence findings** for each paper on Home, and edits to the Research descriptions. These are the owner's existing TODOs, kept verbatim.
+1. **One-sentence findings and the Research descriptions.** Settled 2026-09-26: the published paper's description and Home finding summarize its published abstract. The working paper has no finding yet ("too early"); whether to soften its description, which already states findings, is a TODO in `papers.yml`.
 2. **A higher-resolution headshot**, to be taken or found later. `images/profile.png` is 100×128 px, and it is actually a JPEG, so the site uses a renamed copy, `images/profile.jpg`. A 400 px-wide original would look sharp on high-density screens.
    - **Strip all metadata before committing a new photo.** Phone and camera files carry EXIF data, often including GPS coordinates. The repo is public, and git history keeps every committed version, so never commit the original, even briefly.
    - Check that the exported file has no EXIF, XMP or GPS block. The current file has none.
 3. **Working-paper title.** The site uses the submitted title, as listed on the co-author's research page: "…Resilience in the Minibus Taxi Industry in South Africa".
    - The AOM 2026 symposium and `_pages/research.md` use the other name, "…South African Taxi Industry".
    - The title may change again. It lives in two places: `papers.yml` and `cv.qmd`.
-4. **AOM 2026 symposium.** Google Scholar lists "Strategy, Technology, and Governance for Social Good in Emerging Markets" (*Academy of Management Proceedings*, 2026), a symposium that includes the working paper. It is not on the site or the CV. Add it to Presentations if wanted.
-5. **Extra profile links** (SSRN author page, ResearcherID), if wanted.
+4. **AOM 2026 symposium.** Google Scholar lists "Strategy, Technology, and Governance for Social Good in Emerging Markets" (*Academy of Management Proceedings*, 2026), a symposium that includes the working paper. Decided 2026-09-26 by CV convention, since the owner (who did not present) was unsure whether it counts: the co-author presented, so the CV lists it under Presentations marked "presented by co-author", under the title the AOM program used. The Proceedings item is the symposium abstract, credited to all eight participants, so it is not listed as a publication.
+5. **Extra profile links.** Settled 2026-09-26: Home links the SSRN author page and the ResearcherID, both taken from the old site's `_config.yml` (the ResearcherID is also on the ORCID record).
 6. **Clean-up after cutover:** remove the Jekyll theme files (`_sass/`, `_layouts/`, `_includes/`, `markdown_generator/`, `talkmap*`, unused `_pages/*`, `_config.yml`) and the hand-made `files/CV_RakeenTanvir.pdf`, which the build now regenerates. That old PDF still has the location line. The site no longer serves it (the build publishes the regenerated PDF at the same path), but it stays in the repository until deleted. Deleting it does not remove it from the public git history (commit faa17eb); removing it entirely needs a history rewrite, which is the owner's call.
 7. **Optional:** self-host one web font (e.g. Source Serif 4 for headings) for identical rendering across operating systems. It's a small cost; decide after seeing the system fonts.
