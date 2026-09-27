@@ -1,5 +1,7 @@
 ---
 title: "Curriculum Vitae"
+# The contact email (owner, 2026-09-26), shown on this page and in the PDF header.
+cv-email: rakeen.tanvir@duke.edu
 aliases:
   - /cv/
   - /resume.html
@@ -47,10 +49,9 @@ format:
 ---
 
 <!-- Sources (read in place, never copied into this public repo): the owner's CV PDF of
-2026-06-15 is the primary source; the 2023 DOCX fills gaps. Section order follows Daniel Yi Xu's
-CV (danielyixu.com, dated Fall 2026). Open questions are TODO comments; see the Step 3 PR. -->
-
-<!-- TODO: Duke email for the contact block. It is not in any of the CV sources. -->
+2026-06-15 is the primary source; the 2023 DOCX was checked for gaps and conflicts. Section order
+follows Daniel Yi Xu's CV (danielyixu.com, dated Fall 2026). Open questions are TODO comments;
+see the Step 3 PR. -->
 
 ::: {.content-visible when-format="typst"}
 ```{=typst}
@@ -59,13 +60,13 @@ CV (danielyixu.com, dated Fall 2026). Open questions are TODO comments; see the 
   #text(size: 1.8em, weight: "bold")[Rakeen Tanvir] \
   #v(0.15em)
   Fuqua School of Business, Duke University \
-  #link("{{< meta cv-site-url >}}")[{{< meta cv-site-url >}}]
+  #link("mailto:{{< meta cv-email >}}")[#"{{< meta cv-email >}}"] · #link("{{< meta cv-site-url >}}")[{{< meta cv-site-url >}}]
 ]
 ```
 :::
 
 ::: {.content-visible when-format="html"}
-[Download PDF](files/CV_RakeenTanvir.pdf)
+[{{< meta cv-email >}}](mailto:{{< meta cv-email >}}) · [Download PDF](files/CV_RakeenTanvir.pdf)
 :::
 
 <!-- TODO: Xu's CV opens with "Field of Specialization". None of the CV sources lists fields, so
