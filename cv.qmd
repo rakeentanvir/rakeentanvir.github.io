@@ -147,6 +147,9 @@ department given). Only the AEASP work is listed, as the owner approved. Add Eco
 2022
 : Teaching Assistant, Department of Mathematics & Statistics, University of Massachusetts Amherst
 
+<!-- TODO: ask me — add the course name/number and term if you'd like it listed. (Carried over
+from the old site's _teaching/2022-01-01-umass-statistics-ta.md, removed in the cleanup.) -->
+
 ## Presentations
 
 <!-- The AOM entry uses the paper title as the AOM 2026 program lists it (session 16055). The

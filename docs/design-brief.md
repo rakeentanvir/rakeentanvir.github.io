@@ -76,7 +76,7 @@ The navbar contents align to the text column at every width. Below 576 px the na
 - Section headings are bold small caps over a hairline rule. Links use the site accent `#1a4f8b`.
 - Dated entries are Pandoc definition lists (the year, then the entry). A Typst `terms` rule in `cv.qmd` sets them as a year column in the PDF, with lining figures so the years align; `cv.css` does the same on the web page, where phones put the year above the entry.
 - There are no page numbers and no title block. The PDF metadata carries the title "Rakeen Tanvir – Curriculum Vitae" and the author "Rakeen Tanvir", so viewers show that instead of the file name (set in `cv.qmd`).
-- **Two pages, maximum.** After each CV edit, run a full `quarto render` and check `pdfinfo _site/files/CV_RakeenTanvir.pdf`. (The `files/CV_RakeenTanvir.pdf` in the repo is the old hand-made PDF; see item 6 below.)
+- **Two pages, maximum.** After each CV edit, run a full `quarto render` and check `pdfinfo _site/files/CV_RakeenTanvir.pdf`. (The PDF exists only in the build; the repo keeps no copy since the clean-up, item 6 below.)
 
 ## Borrowed from the model sites
 
@@ -99,16 +99,16 @@ None of the four has a dark mode. Ours keeps the same restraint in dark: one acc
 
 ## Open items for the owner
 
-These decisions are still open for the owner. Where one touches page text, it stays as a `<!-- TODO -->` rather than being filled in, per the rule against inventing academic content. Items 1, 3, 4 and 5 are settled and kept for the record.
+These decisions are still open for the owner. Where one touches page text, it stays as a `<!-- TODO -->` rather than being filled in, per the rule against inventing academic content. Items 1, 3, 4, 5 and 6 are settled and kept for the record.
 
 1. **One-sentence findings and the Research descriptions.** Settled 2026-09-26: the published paper's description and Home finding summarize its published abstract. The working paper has no finding yet ("too early"); whether to soften its description, which already states findings, is a TODO in `papers.yml`.
-2. **A higher-resolution headshot**, to be taken or found later. `images/profile.png` is 100×128 px, and it is actually a JPEG, so the site uses a renamed copy, `images/profile.jpg`. A 400 px-wide original would look sharp on high-density screens.
+2. **A higher-resolution headshot**, to be taken or found later. `images/profile.jpg` is 100×128 px. It is the old site's `images/profile.png` (actually a JPEG) under its correct extension; the duplicate `.png` was removed in the clean-up. A 400 px-wide original would look sharp on high-density screens.
    - **Strip all metadata before committing a new photo.** Phone and camera files carry EXIF data, often including GPS coordinates. The repo is public, and git history keeps every committed version, so never commit the original, even briefly.
    - Check that the exported file has no EXIF, XMP or GPS block. The current file has none.
 3. **Working-paper title.** The site uses the submitted title, as listed on the co-author's research page: "…Resilience in the Minibus Taxi Industry in South Africa".
    - The AOM 2026 symposium and `_pages/research.md` use the other name, "…South African Taxi Industry".
    - The title may change again. It lives in two places: `papers.yml` and `cv.qmd`.
 4. **AOM 2026 symposium.** Google Scholar lists "Strategy, Technology, and Governance for Social Good in Emerging Markets" (*Academy of Management Proceedings*, 2026), a symposium that includes the working paper. Decided 2026-09-26 by CV convention, since the owner (who did not present) was unsure whether it counts: the co-author presented, so the CV lists it under Presentations marked "presented by co-author", under the title the AOM program used. The Proceedings item is the symposium abstract, credited to all eight participants, so it is not listed as a publication.
-5. **Extra profile links.** Settled 2026-09-26: Home links the SSRN author page and the ResearcherID, both taken from the old site's `_config.yml` (the ResearcherID is also on the ORCID record).
-6. **Clean-up after cutover:** remove the Jekyll theme files (`_sass/`, `_layouts/`, `_includes/`, `markdown_generator/`, `talkmap*`, unused `_pages/*`, `_config.yml`) and the hand-made `files/CV_RakeenTanvir.pdf`, which the build now regenerates. That old PDF still has the location line. The site no longer serves it (the build publishes the regenerated PDF at the same path), but it stays in the repository until deleted. Deleting it does not remove it from the public git history (commit faa17eb); removing it entirely needs a history rewrite, which is the owner's call.
+5. **Extra profile links.** Settled 2026-09-26: Home links the SSRN author page and the ResearcherID, both taken from the old site's `_config.yml` (removed in the clean-up; still in git history). The ResearcherID is also on the ORCID record.
+6. **Clean-up after cutover.** Done 2026-09-26: the old Jekyll/academicpages files are gone (theme, layouts, collections, generators, talkmap, template images and files, the unused `_pages/*`, `_config.yml`, the theme's LICENSE and README), along with the hand-made `files/CV_RakeenTanvir.pdf`, which the build regenerates. Kept: the three content pages `_pages/about.md`, `research.md` and `cv.md` (the verbatim source), `cowork-website-brief.md`, and `.github/workflows/scrape_talks.yml`, which now fails if run because the talk-map files it uses are gone. The old PDF, which has the location line, is still in the public git history (commit faa17eb); removing it entirely needs a history rewrite, which is the owner's call.
 7. **Optional:** self-host one web font (e.g. Source Serif 4 for headings) for identical rendering across operating systems. It's a small cost; decide after seeing the system fonts.

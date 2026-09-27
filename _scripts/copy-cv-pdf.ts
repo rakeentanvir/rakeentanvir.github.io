@@ -13,14 +13,14 @@ try {
   Deno.statSync(src);
 } catch {
   // In CI (GitHub Actions sets CI=true) the full render before publishing must produce the PDF;
-  // otherwise the stale files/CV_RakeenTanvir.pdf in the repo would be published in its place.
+  // otherwise the site would be published without it (the repo keeps no copy).
   // Local HTML-only renders (plain `quarto preview`, `quarto render --to html`) may skip it.
   if (Deno.env.get("QUARTO_PROJECT_RENDER_ALL") && Deno.env.get("CI")) {
-    console.error(`copy-cv-pdf: ${src} was not rendered; refusing to publish a stale CV PDF.`);
+    console.error(`copy-cv-pdf: ${src} was not rendered; refusing to publish without the CV PDF.`);
     Deno.exit(1);
   }
-  console.warn(`copy-cv-pdf: CV PDF not rendered in this run; ${dest} is the repo's copy. ` +
-    "Run `quarto render` (or `quarto preview --render all`) to rebuild it.");
+  console.warn(`copy-cv-pdf: CV PDF not rendered in this run; ${dest} is left from the last ` +
+    "full render, if any. Run `quarto render` (or `quarto preview --render all`) to rebuild it.");
   Deno.exit(0);
 }
 

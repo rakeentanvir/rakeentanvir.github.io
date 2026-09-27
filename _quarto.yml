@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: _site
-  # Only these pages are rendered; the Jekyll files still in the repo are ignored.
+  # Only these pages are rendered; the other Markdown files (docs/, _pages/, the briefs) are not pages.
   render:
     - index.qmd
     - research.qmd
