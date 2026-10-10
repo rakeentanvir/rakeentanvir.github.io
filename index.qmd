@@ -9,6 +9,9 @@ listing:
   template: _templates/papers.ejs
   template-params:
     compact: true
+  # Home highlights the two papers; works in progress are on Research only.
+  exclude:
+    section: works-in-progress
   sort: false
 ---
 

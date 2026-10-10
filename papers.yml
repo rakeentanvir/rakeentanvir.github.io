@@ -1,10 +1,12 @@
-# Papers listed on research.qmd (full entries) and index.qmd (highlights).
-# Wording is copied verbatim from _pages/research.md on master (except the working-paper title and
-# the published paper's description and finding; see below); edit here, not in the pages.
+# Papers listed on research.qmd (full entries) and index.qmd (highlights; works in progress are
+# left out there). Wording is copied verbatim from _pages/research.md on master (except the
+# working-paper title and description, the published paper's description and finding, and the
+# work in progress; see below); edit here, not in the pages.
 #
-# Fields: section (publications | working-papers), title, href (optional link on the title),
-# authors, venue (markdown), description (markdown), finding (optional one sentence, shown only
-# in the home-page highlights), links (optional list of {text, href}).
+# Fields: section (publications | working-papers | works-in-progress), title, href (optional
+# link on the title), authors, venue (optional, markdown), description (optional, markdown),
+# finding (optional one sentence, shown only in the home-page highlights), links (optional list
+# of {text, href}).
 
 # Description and finding: a summary of the published (JEDC) abstract, which the owner asked for
 # on 2026-09-26 in place of the _pages/research.md sentence. No finding for the working paper yet
@@ -23,10 +25,18 @@
 # Title: the submitted title, as on the co-author's research page (chriseaglin.com/research); chosen
 # by the owner on 2026-09-25 over the "...South African Taxi Industry" name in _pages/research.md.
 # It may change again: update it here and in cv.qmd.
-# TODO: the description (verbatim from _pages/research.md) states findings ("we find that..."), but
-# the owner said on 2026-09-26 that it's too early to summarize a clear message. Keep or soften?
+# Description: the _pages/research.md text with its findings taken out, which the owner asked for
+# on 2026-10-10 ("soften description"; too early for a clear message). The first sentence and the
+# data are unchanged; "examine" is from the co-author's abstract (chriseaglin.com/research).
 - section: working-papers
   title: "\"The Cost of Flexibility: Informal Governance and Resilience in the Minibus Taxi Industry in South Africa.\""
   authors: "Christopher F. Eaglin and Rakeen Tanvir."
   venue: "Revise and resubmit at the *Strategic Management Journal*, 2026."
-  description: "We study how the management of informal institutions shapes small-firm performance in South Africa's minibus taxi industry. Using administrative loan records, high-frequency GPS data, and weather shocks, we find that organizational flexibility increases vehicle utilization and improves loan repayment, though it does not fully protect firms when severe shocks occur."
+  description: "We study how the management of informal institutions shapes small-firm performance in South Africa's minibus taxi industry. Using administrative loan records, high-frequency GPS data, and weather shocks, we examine how organizational flexibility shapes vehicle utilization and loan repayment, including when severe shocks occur."
+
+# Owner, 2026-10-10: "the newspaper project with Daniel P. Gross and Matthew S. Johnson". It has no
+# public or owner-written title yet, so the entry uses the owner's words; no venue or description.
+# TODO: add the working title when there is one (here and in cv.qmd).
+- section: works-in-progress
+  title: "Newspaper project"
+  authors: "With Daniel P. Gross and Matthew S. Johnson."

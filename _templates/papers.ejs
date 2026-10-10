@@ -9,14 +9,16 @@ const compact = templateParams && templateParams.compact;
 <% for (const item of items) { %>
 ::: {.paper}
 <% if (item.href) { %>[<%= item.title %>](<%= item.href %>){.paper-title}<% } else { %>[<%= item.title %>]{.paper-title}<% } %>\
-[<%= item.authors %> <%= item.venue %>]{.paper-meta}
+[<%= item.authors %><% if (item.venue) { %> <%= item.venue %><% } %>]{.paper-meta}
 <% if (compact && item.finding) { %>
 
 <%= item.finding %>
 <% } %>
 <% if (!compact) { %>
+<% if (item.description) { %>
 
 <%= item.description %>
+<% } %>
 <% if (item.links) { %>
 
 [<%= item.links.map(link => `[${link.text}](${link.href})`).join(' · ') %>]{.paper-links}

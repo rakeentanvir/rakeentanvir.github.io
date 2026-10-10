@@ -56,7 +56,9 @@ format:
 follows Daniel Yi Xu's CV (danielyixu.com, dated Fall 2026). Open questions are TODO comments;
 see the Step 3 PR. The owner answered them on 2026-09-26: the field, the Extension School, both
 Bowman years, the Howard TA work, the talk title, the Senior RA title and the AOM symposium come
-from those answers. -->
+from those answers. On 2026-10-10 the owner asked for Econ181, the course names and terms, and
+works in progress; the sources for each (including the owner's longer Sept 2025 CV) are in the
+comments beside them. -->
 
 ::: {.content-visible when-format="typst"}
 ```{=typst}
@@ -113,6 +115,14 @@ the owner chose on 2026-09-25); the owner confirmed the year on 2026-09-26. -->
   *Journal of Economic Dynamics and Control* 185 (2026): 105294.\
   <https://doi.org/10.1016/j.jedc.2026.105294>
 
+## Works in Progress
+
+<!-- Owner, 2026-10-10: "the newspaper project with Daniel P. Gross and Matthew S. Johnson". No
+working title is public or in the owner's sources, so the entry uses the owner's words.
+TODO: add the working title when there is one (here and in papers.yml). -->
+
+Newspaper project (with Daniel P. Gross and Matthew S. Johnson)
+
 ## Honors and Awards
 
 2022
@@ -138,17 +148,29 @@ the owner chose on 2026-09-25); the owner confirmed the year on 2026-09-26. -->
 
 ## Teaching Experience
 
-<!-- TODO: The same line of the 2023 DOCX also names Econ181 at Howard University (no term or
-department given). Only the AEASP work is listed, as the owner approved. Add Econ181? -->
+<!-- Howard (owner, 2026-10-10: add Econ181). The 2023 DOCX has "Served as a teaching assistant
+for 2023 AEASP and for Econ181 course at Howard University"; the owner's longer Sept 2025 CV has
+"TA for AEA Summer Program and Econ181 at Howard University". The course name is Howard's: the
+2023-24 catalogue abbreviates it "ECON 181: Stat Prog Financial Lit", which the department's 2018
+brochure spells out; the department's course page (2020) calls it "Data Analysis and Financial
+Literacy in R".
+TODO: confirm the course name. No source gives the ECON 181 term or year (the DOCX's "2023" goes
+with AEASP); it is listed with the 2023 AEASP work because the DOCX groups them; confirm it. -->
 
 2023
-: Teaching Assistant, American Economic Association Summer Training Program, Howard University
+: Teaching Assistant, American Economic Association Summer Training Program and ECON\ 181 (Statistical Programming and Financial Literacy), Howard University
 
 2022
-: Teaching Assistant, Department of Mathematics & Statistics, University of Massachusetts Amherst
+: Teaching Assistant, Department of Mathematics & Statistics, University of Massachusetts Amherst\
+  STAT\ 697DS, Statistical Data Science (Spring 2022); MATH\ 104, Precalculus
 
-<!-- TODO: ask me — add the course name/number and term if you'd like it listed. (Carried over
-from the old site's _teaching/2022-01-01-umass-statistics-ta.md, removed in the cleanup.) -->
+<!-- UMass courses (owner, 2026-10-10: "give name and term"): the owner's longer Sept 2025 CV names
+"Statistical Data Science STAT697DS" (grading) and "Precalculus MATH104" (lab); UMass's official
+title for STAT 697DS is "Statistical Methods for Data Science". Spring 2022 is from the Five College
+course archive, which lists one 2022 section of STAT 697DS taught by the instructor the owner named.
+TODO: no source gives the MATH 104 term; confirm the terms. -->
+
+<!-- The course codes use non-breaking spaces ("ECON\ 181") so a number never starts a line. -->
 
 ## Presentations
 

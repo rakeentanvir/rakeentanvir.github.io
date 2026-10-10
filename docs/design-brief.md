@@ -8,7 +8,7 @@ under ten seconds, on any screen, in light or dark.
 
 - **One column.** The headshot sits at the top of the column. There is no sidebar, which is the part of the current theme that dates it.
 - **Type does the work.** There are no cards, no grids, no animation, no hero image and no icons.
-- **Plain text wins.** Page text is copied verbatim from `_pages/*.md` on `master`. New wording is the owner's to write; the owner approved two exceptions on 2026-09-25, the Home focus list and the submitted working-paper title, and on 2026-09-26 asked for the published paper's description and one-sentence finding to be summarized from its published abstract. Open questions stay as `<!-- TODO -->` comments.
+- **Plain text wins.** Page text is copied verbatim from `_pages/*.md` on `master`. New wording is the owner's to write; the owner approved two exceptions on 2026-09-25, the Home focus list and the submitted working-paper title, and on 2026-09-26 asked for the published paper's description and one-sentence finding to be summarized from its published abstract. On 2026-10-10 the owner asked for the working paper's description to be softened (its findings taken out) and named the work in progress. Open questions stay as `<!-- TODO -->` comments.
 - **Nothing third-party.** No web fonts, no analytics, no search index, no CDN scripts. The pages load only files from this site.
 - **Relative links everywhere.** The domain appears once, as `site-url` in `_quarto.yml`, so the planned domain switch is a one-line change.
 
@@ -19,7 +19,7 @@ The nav has three items, Home · Research · CV. They sit on the right of a plai
 | Page | Content |
 |---|---|
 | Home (`index.qmd`) | Headshot, then the name, then the two-sentence intro. **Research** has three bolded focus terms in a short list, the research paragraphs, and the two papers as highlights (title + authors/venue, then a one-sentence finding where `papers.yml` has one; the working paper has none yet). **Background** follows, then **CV & links** (CV, Google Scholar, ORCID, SSRN, ResearcherID, GitHub, LinkedIn). |
-| Research (`research.qmd`) | **Publications** and **Working Papers**, both listed from `papers.yml`. Each paper shows its title (linked when there is a link), then authors and venue, then a one-paragraph description, then optional extra links. |
+| Research (`research.qmd`) | **Publications**, **Working Papers** and **Works in Progress**, all listed from `papers.yml`. Each paper shows its title (linked when there is a link), then authors and venue, then a one-paragraph description, then optional extra links. A work in progress may have only a title and co-authors, and Home leaves works in progress out. |
 | CV (`cv.qmd`) | The CV sections, and a "Download PDF" link. The same file renders to `files/CV_RakeenTanvir.pdf` via Typst, so the old PDF link keeps working. The PDF must fit on two pages. |
 
 The focus terms were drafted on 2026-09-25 at the owner's request. They are the owner's framing of strategy (how firms' choices shape their outcomes) plus three of the Google Scholar profile keywords: Science&Innovation, Startups/Entrepreneurs and Labor Automation. The other two keywords, Strategic Management and Economic History, are covered by the lead-in and by the verbatim "More broadly…" sentence below the list. If the Scholar keywords change, update the list to match.
@@ -101,7 +101,7 @@ None of the four has a dark mode. Ours keeps the same restraint in dark: one acc
 
 These decisions are still open for the owner. Where one touches page text, it stays as a `<!-- TODO -->` rather than being filled in, per the rule against inventing academic content. Items 1, 3, 4, 5 and 6 are settled and kept for the record.
 
-1. **One-sentence findings and the Research descriptions.** Settled 2026-09-26: the published paper's description and Home finding summarize its published abstract. The working paper has no finding yet ("too early"); whether to soften its description, which already states findings, is a TODO in `papers.yml`.
+1. **One-sentence findings and the Research descriptions.** Settled 2026-09-26: the published paper's description and Home finding summarize its published abstract. The working paper has no finding yet ("too early"), and on 2026-10-10 its description was softened at the owner's request: the question and data stay, the findings are gone.
 2. **A higher-resolution headshot**, to be taken or found later. `images/profile.jpg` is 100×128 px. It is the old site's `images/profile.png` (actually a JPEG) under its correct extension; the duplicate `.png` was removed in the clean-up. A 400 px-wide original would look sharp on high-density screens.
    - **Strip all metadata before committing a new photo.** Phone and camera files carry EXIF data, often including GPS coordinates. The repo is public, and git history keeps every committed version, so never commit the original, even briefly.
    - Check that the exported file has no EXIF, XMP or GPS block. The current file has none.

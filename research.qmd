@@ -16,6 +16,12 @@ listing:
     include:
       section: working-papers
     sort: false
+  - id: works-in-progress
+    contents: papers.yml
+    template: _templates/papers.ejs
+    include:
+      section: works-in-progress
+    sort: false
 ---
 
 ## Publications
@@ -28,4 +34,9 @@ listing:
 ::: {#working-papers}
 :::
 
-<!-- TODO: ask me — add works in progress here? (The paper descriptions live in papers.yml.) -->
+## Works in Progress
+
+::: {#works-in-progress}
+:::
+
+<!-- The paper descriptions live in papers.yml. -->
