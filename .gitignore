@@ -1,27 +1,12 @@
-# Ignore the contents of the _site directory and other cache directories
+# Build output
 _site/
-.sass-cache/
-
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Ignore files created by npm
-node_modules
-package-lock.json
-
-# Ignore the vendor file at root level and bundle for alternative installation
-/vendor/
-.bundle/
-
-# Ignore folders related to IDEs
-.vscode/
 
 # Quarto
 /.quarto/
 **/*.quarto_ipynb
+
+# Folders related to IDEs
+.vscode/
 
 # Local design-review screenshots (Step 2); never committed
 /_review/

@@ -1,9 +1,8 @@
 # Renders the Quarto site and publishes _site to the gh-pages branch.
 #
 # Runs on every push to master (i.e. after a PR is merged) and on demand from the Actions tab.
-# The site only goes live from gh-pages once Settings > Pages > Source is switched to
-# "Deploy from a branch: gh-pages / (root)"; until then the Jekyll build of master stays live,
-# unchanged (_config.yml excludes the Quarto sources from it).
+# GitHub Pages serves the site from gh-pages (Settings > Pages > Source: "Deploy from a branch:
+# gh-pages / (root)").
 name: Publish site
 
 on:
