@@ -30,17 +30,18 @@ With Christopher F. Eaglin, I study informal governance and resilience in the So
 
 More broadly, my interests span strategic management, innovation and entrepreneurship, economic history, science and technology, and the economics of AI and automation.
 
-<!-- TODO: ask me — happy to add a sentence on each paper's main finding or contribution. -->
+<!-- Each paper's one-sentence finding is the finding field in papers.yml; the working paper has
+none yet (owner, 2026-09-26: too early for a clear message). -->
 
 ::: {#highlights}
 :::
 
 ## Background
 
-Before starting my PhD, I was a Research Assistant in Macroeconomics & Quantitative Studies at the Federal Reserve Board of Governors, and earlier spent several years in industry, including at MathWorks. I hold a B.A. in Psychology from Boston College.
+Before starting my PhD, I was a Senior Research Assistant in Macroeconomics & Quantitative Studies at the Federal Reserve Board of Governors, and earlier spent several years in industry, including at MathWorks. I hold a B.A. in Psychology from Boston College.
 
 ## CV & links
 
 See my [CV](cv.qmd) or find me on [Google Scholar](https://scholar.google.com/citations?user=-hSpU7wAAAAJ).
 
-[ORCID](https://orcid.org/0000-0002-0139-0990) · [GitHub](https://github.com/rakeentanvir) · [LinkedIn](https://www.linkedin.com/in/rakeentanvir)
+[ORCID](https://orcid.org/0000-0002-0139-0990) · [SSRN](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6279160) · [ResearcherID](https://www.webofscience.com/wos/author/record/JNT-0569-2023) · [GitHub](https://github.com/rakeentanvir) · [LinkedIn](https://www.linkedin.com/in/rakeentanvir)
