@@ -2,13 +2,18 @@
 // Listing template for papers.yml. Quarto runs the output through Pandoc as markdown, so
 // field text gets the same smart quotes and *italics* as the page text. (In Quarto listing
 // templates the "equals" tag inserts text raw, without HTML escaping.)
-// template-params: compact: true  -> title + authors/venue only (home-page highlights).
+// template-params: compact: true  -> title + authors/venue, plus the one-sentence finding where
+// there is one (home-page highlights).
 const compact = templateParams && templateParams.compact;
 %>
 <% for (const item of items) { %>
 ::: {.paper}
 <% if (item.href) { %>[<%= item.title %>](<%= item.href %>){.paper-title}<% } else { %>[<%= item.title %>]{.paper-title}<% } %>\
 [<%= item.authors %> <%= item.venue %>]{.paper-meta}
+<% if (compact && item.finding) { %>
+
+<%= item.finding %>
+<% } %>
 <% if (!compact) { %>
 
 <%= item.description %>
