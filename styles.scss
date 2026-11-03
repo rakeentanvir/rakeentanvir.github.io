@@ -116,6 +116,13 @@ a:focus-visible {
     order: 30;
     margin-left: 0.85rem;           // with the toggle's own padding, matches the gap between links
   }
+  // The toggle's icon is an SVG background image (Quarto's CSS), but Bootstrap Icons also gives
+  // the empty .bi::before its icon font, and that alone makes browsers download the 180 KB font
+  // file on every page. Use the page font for the empty pseudo-element; nothing is drawn with it,
+  // so the toggle looks the same. (!important because Bootstrap Icons uses it too.)
+  .quarto-color-scheme-toggle .bi::before {
+    font-family: inherit !important;
+  }
 }
 
 // Tablets: Quarto narrows the text column to body-width minus the two page gutters
