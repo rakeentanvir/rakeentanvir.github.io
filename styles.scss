@@ -109,8 +109,12 @@ a.uri {
     padding-left: 0;
     padding-right: 0;
   }
-  // Keyboard focus: a solid outline in place of Bootstrap's faint 25%-alpha ring.
-  .nav-link:focus-visible {
+  // Keyboard focus: a solid outline in place of Bootstrap's faint 25%-alpha ring, on the links,
+  // the name and the light/dark toggle alike. (Quarto marks the navbar data-bs-theme="dark" in
+  // both modes, so the browser's default ring there would follow the dark color scheme.)
+  .nav-link:focus-visible,
+  .navbar-brand:focus-visible,
+  .quarto-color-scheme-toggle:focus-visible {
     outline: 2px solid currentColor;
     outline-offset: 2px;
     box-shadow: none;
