@@ -5,8 +5,9 @@
 // Give each one a fallback: a meta refresh and a plain link, both inside <noscript>, so
 // Quarto's script still does the redirect whenever JavaScript runs (it also carries over a
 // #fragment or ?query; the fallback lands at the top of the new page). Also writes the
-// targets with forward slashes (renders on Windows emit backslashes). Pages already updated
-// by an earlier run are left as they are. If a Quarto upgrade changes the alias pages, this
+// targets with forward slashes (renders on Windows emit backslashes) and marks the page as
+// English, which Quarto's alias pages do not. Pages already updated by an earlier run are left
+// as they are. If a Quarto upgrade changes the alias pages, this
 // warns and skips them rather than failing the build.
 const outDir = Deno.env.get("QUARTO_PROJECT_OUTPUT_DIR") ?? "_site";
 const redirectsLine = /var redirects = (\{.*\});/;
@@ -40,6 +41,10 @@ for (const file of htmlFiles(outDir)) {
   for (const key in redirects) redirects[key] = redirects[key].replaceAll("\\", "/");
   // Functions as replacements, so a "$" in a target is inserted literally.
   let out = html.replace(redirectsLine, () => `var redirects = ${JSON.stringify(redirects)};`);
+
+  // The page language, for the fallback text (Quarto's alias pages set none).
+  out = out.replace('<html xmlns="http://www.w3.org/1999/xhtml">',
+    '<html xmlns="http://www.w3.org/1999/xhtml" lang="en">');
 
   const target = redirects[""];
   if (target && !out.includes('http-equiv="refresh"')) {
