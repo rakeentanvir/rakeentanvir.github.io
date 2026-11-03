@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: _site
-  # Only these pages are rendered; the other Markdown files (docs/, _pages/, the briefs) are not pages.
+  # Only these pages are rendered; the other Markdown files (README, docs/, the brief) are not pages.
   render:
     - index.qmd
     - research.qmd
