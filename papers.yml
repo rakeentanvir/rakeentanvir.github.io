@@ -1,6 +1,7 @@
 # Papers listed on research.qmd (full entries) and index.qmd (highlights).
-# Wording is copied verbatim from _pages/research.md on master (except the working-paper title and
-# the published paper's description and finding; see below); edit here, not in the pages.
+# Wording is copied verbatim from _pages/research.md, the old Jekyll page (removed in the 2026-11-03
+# cleanup; in git history, for example at commit e7d493e), except the working-paper title and the published
+# paper's description and finding; see below. Edit here, not in the pages.
 #
 # Fields: section (publications | working-papers), title, href (optional link on the title),
 # authors, venue (markdown), description (markdown), finding (optional one sentence, shown only

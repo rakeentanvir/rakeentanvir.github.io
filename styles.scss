@@ -68,6 +68,11 @@ a:hover,
 a:focus-visible {
   text-decoration-color: currentColor;
 }
+// Bare URLs (Pandoc autolinks, e.g. the DOI on the CV page) have no spaces to wrap at, so let
+// them break anywhere rather than push the page wider than the screen on phones below 370px.
+a.uri {
+  overflow-wrap: anywhere;
+}
 
 // Navbar: page background, a hairline underneath, contents aligned to the text column at
 // every width (same 16px gutters as the page; width caps in the media queries below).
@@ -104,8 +109,12 @@ a:focus-visible {
     padding-left: 0;
     padding-right: 0;
   }
-  // Keyboard focus: a solid outline in place of Bootstrap's faint 25%-alpha ring.
-  .nav-link:focus-visible {
+  // Keyboard focus: a solid outline in place of Bootstrap's faint 25%-alpha ring, on the links,
+  // the name and the light/dark toggle alike. (Quarto marks the navbar data-bs-theme="dark" in
+  // both modes, so the browser's default ring there would follow the dark color scheme.)
+  .nav-link:focus-visible,
+  .navbar-brand:focus-visible,
+  .quarto-color-scheme-toggle:focus-visible {
     outline: 2px solid currentColor;
     outline-offset: 2px;
     box-shadow: none;
@@ -115,6 +124,13 @@ a:focus-visible {
   .navbar-container > .quarto-navbar-tools {
     order: 30;
     margin-left: 0.85rem;           // with the toggle's own padding, matches the gap between links
+  }
+  // The toggle's icon is an SVG background image (Quarto's CSS), but Bootstrap Icons also gives
+  // the empty .bi::before its icon font, and that alone makes browsers download the 180 KB font
+  // file on every page. Use the page font for the empty pseudo-element; nothing is drawn with it,
+  // so the toggle looks the same. (!important because Bootstrap Icons uses it too.)
+  .quarto-color-scheme-toggle .bi::before {
+    font-family: inherit !important;
   }
 }
 

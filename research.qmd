@@ -18,6 +18,10 @@ listing:
     sort: false
 ---
 
+<!-- TODO: a page-specific description for search results and link previews, if you want one:
+add `description:` to this page's front matter. Until then the page uses the site description
+set in _quarto.yml. -->
+
 ## Publications
 
 ::: {#publications}
