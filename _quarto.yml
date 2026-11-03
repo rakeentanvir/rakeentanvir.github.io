@@ -47,13 +47,15 @@ website:
 # website.* is not visible to the meta shortcode, so expose the same URL to cv.qmd.
 cv-site-url: *site-url
 
-# Page metadata every page inherits (a page's own front matter overrides it).
+# Page metadata every page inherits (a page's own front matter overrides it; research.qmd and
+# cv.qmd carry a TODO for a page-specific description).
 # description gives each page its <meta name="description"> and its og:/twitter: description;
 # without a page-level description Quarto emits no meta description at all, and research.html
 # got no og:description either. hide-description keeps it out of the title block, where Quarto
-# would otherwise print it under the page title.
-# TODO: page-specific descriptions, if wanted (research.qmd, cv.qmd): add `description:` to the
-# page's front matter. Until then every page carries the site description above.
+# would otherwise print it under the page title. It is a variable of Quarto's own title-block
+# template (used for book chapters), not a documented option, so the schema does not validate
+# it; it works in 1.8.24. After a Quarto upgrade, check that research.html, cv.html and
+# 404.html still show no description under their titles.
 description: *site-description
 hide-description: true
 # Alt text for the preview image (og:image:alt, twitter:image:alt): the headshot's alt text.
