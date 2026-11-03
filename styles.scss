@@ -68,6 +68,11 @@ a:hover,
 a:focus-visible {
   text-decoration-color: currentColor;
 }
+// Bare URLs (Pandoc autolinks, e.g. the DOI on the CV page) have no spaces to wrap at, so let
+// them break anywhere rather than push the page wider than the screen on phones below 370px.
+a.uri {
+  overflow-wrap: anywhere;
+}
 
 // Navbar: page background, a hairline underneath, contents aligned to the text column at
 // every width (same 16px gutters as the page; width caps in the media queries below).
