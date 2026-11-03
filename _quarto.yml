@@ -77,3 +77,6 @@ format:
     canonical-url: true
     # Listing pages otherwise pull MathJax from a CDN; the site has no math.
     html-math-method: plain
+    # The site has no code blocks, so leave out the copy-button script (clipboard.js) that every
+    # page would otherwise load.
+    code-copy: false
