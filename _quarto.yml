@@ -18,12 +18,19 @@ project:
 
 website:
   title: "Rakeen Tanvir"
-  description: "Rakeen Tanvir is a PhD student in the Strategy Department at Duke University's Fuqua School of Business, researching innovation and entrepreneurship strategy."
+  description: &site-description "Rakeen Tanvir is a PhD student in the Strategy Department at Duke University's Fuqua School of Business, researching innovation and entrepreneurship strategy."
   # The one place the domain is set (the CV PDF header reuses it via cv-site-url below).
   site-url: &site-url https://rakeentanvir.com
   favicon: images/favicon.ico
+  # The link-preview image (og:image, twitter:image) for every page. At 100x128 px it is smaller
+  # than most previews accept (Facebook 200x200, X/Twitter 144x144), so previews show text only
+  # until a larger photo replaces it (docs/design-brief.md, open item 2).
   image: images/profile.jpg
   open-graph: true
+  # X/Twitter card tags. The summary card, not summary_large_image: that one needs a 300x157 px
+  # or larger image.
+  twitter-card:
+    card-style: summary
   search: false
   navbar:
     collapse: false
@@ -39,6 +46,18 @@ website:
 
 # website.* is not visible to the meta shortcode, so expose the same URL to cv.qmd.
 cv-site-url: *site-url
+
+# Page metadata every page inherits (a page's own front matter overrides it).
+# description gives each page its <meta name="description"> and its og:/twitter: description;
+# without a page-level description Quarto emits no meta description at all, and research.html
+# got no og:description either. hide-description keeps it out of the title block, where Quarto
+# would otherwise print it under the page title.
+# TODO: page-specific descriptions, if wanted (research.qmd, cv.qmd): add `description:` to the
+# page's front matter. Until then every page carries the site description above.
+description: *site-description
+hide-description: true
+# Alt text for the preview image (og:image:alt, twitter:image:alt): the headshot's alt text.
+image-alt: "Portrait of Rakeen Tanvir"
 
 # Design variant (typography and spacing): styles-a.scss reads docs/design-brief.md literally,
 # styles-b.scss is a second reading. Change this one line to switch. The variant goes after

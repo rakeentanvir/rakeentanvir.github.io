@@ -74,6 +74,10 @@ from those answers. -->
 [{{< meta cv-email >}}](mailto:{{< meta cv-email >}}) · [Download PDF](files/CV_RakeenTanvir.pdf)
 :::
 
+<!-- TODO: a page-specific description for search results and link previews, if you want one:
+add `description:` to this page's front matter. Until then the page uses the site description
+set in _quarto.yml. -->
+
 ## Field of Specialization
 
 Strategy
